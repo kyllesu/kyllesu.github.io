@@ -78,6 +78,19 @@
 
 }
 
+.wireframe-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+
+}
+
+.img-wireframe {
+    width: 100%;
+    height: auto;
+    
+
+}
 
   
