@@ -1,9 +1,13 @@
+@charset "utf-8" ;
 .center {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
     margin-bottom: 0;
     margin-top: 0;
+	color: white;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	-webkit-text-stroke: 1px black;
 
 }
 
@@ -36,13 +40,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    -ms-transform: translate(-20%, -20%);
     text-align: center;
 }
 
 .text {
     background-color: black;
-    color: white;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+	color: white;
     font-size: 20px;
     padding: 5px 5px;
 }
@@ -58,6 +63,7 @@
 .paragraph {
     width: 700px;
     font-size: 20px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .button-container {
@@ -71,9 +77,11 @@
 .button-style {
     border: none;
     color: black;
+	margin: 10px;
     padding: 15px 32px;
     text-align: center;
     font-size: 16px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
     cursor: pointer;
 
 }
@@ -92,5 +100,42 @@
     
 
 }
+
+#Title {
+	font-size: 69px;
+	color: white;
+	font-family: sans-serif;
+
+	
+}
+
+.geocities {
+	display: block;
+	margin: auto;
+	
+	
+}
+
+.paragraph{
+	 color: yellow;
+	
+}
+
+body {
+	background-image: url("background.png");
+	
+}
+
+.link{
+	color: white;
+	-webkit-text-stroke: 0px white;
+}
+
+.homebutton {
+	position: absolute;
+	
+}
+
+
 
   
