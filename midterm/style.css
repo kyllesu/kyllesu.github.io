@@ -1,27 +1,101 @@
+header{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .title {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1%;
-    margin-top: 2%;
-    font: small-caps bold 55px/1 sans-serif;
+    font: small-caps bold 65px/1 sans-serif;
     font-weight: 1000;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@media screen and (max-width: 900px) {
+  .container{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 2px;
+  }
 
-body{
-    font-family: 'Open Sans', sans-serif;
+  .title {
+    font: small-caps bold 45px/1 sans-serif;
+  }
+
 }
 
+.container{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
+.logo{
+  display: flex;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo2{
+  visibility: hidden;
+}
+
+.icon{
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+
+.categories {
+  position: relative;
+  display: flex;
+  font: small-caps bold 15px/1 sans-serif;
+  justify-content: space-between;
+  flex-grow:0.5;
+}
+
+.link {
+  color: black;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  font: small-caps bold 15px/1 sans-serif;
+  background-color: whitesmoke;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 20px 20px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .link {background-color: none;}
+
 .search {
-  width: 100%;
+  max-width: 100%;
   position: relative;
   display: flex;
 }
 
 .searchTerm {
-  width: 100%;
+  max-width: 100%;
   border: 2px solid black;
   border-right: none;
   padding: 6px;
@@ -36,7 +110,7 @@ body{
 }
 
 .searchButton {
-  width: 40px;
+  max-width: 40px;
   height: 36px;
   border: 2px solid black;
   background: white;
@@ -47,54 +121,12 @@ body{
   font-size: 20px;
 }
 
-
-.wrap-search{
-  width: 20%;
-  position: absolute;
-  top: 5%;
-  right: 15%;
-}
-
-.wrap-account{
-  position: absolute;
-  top: 5%;
-  right: 10%;
-}
-
 .account-icons{
   position: relative;
   display: flex;
   flex-direction: row;
   gap: 15px;
-  width: 40px;
-  height: 36px;
-  border: none;
-  background: white;  
   cursor: pointer; 
-}
-
-.logo{
-  width: 30%;
-  height: 30%;
-}
-
-.wrap-logo{
-  position:absolute;
-  top: -5%;
-  left: -3%;
-}
-
-
-.head-container {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-left: 30%;
-    margin-right: 30%;
-    font: small-caps bold 15px/1 sans-serif;
-    padding-bottom: 5px;
 }
 
 a:link {
@@ -110,23 +142,42 @@ a:active {
     text-decoration: none;
 }
 
-.link {
-    color: black;
+#rect {
+  height: 10px;
+  max-width: 100%;
+  background-color: black;
 }
 
-#animated-gif {
-    max-width: 50%;
-    height: auto;
-    margin: 0 auto;
-    padding-top: 15px;
-
+.imageBox {
+  position: relative;
+  float: left;
+}
+.imageBox .hover-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+.imageBox:hover .hover-image {
+  display: block;
 }
 
-#animated-gif img {
-    display: block;
-    width: 100%;
-    height: 100%;
-
+.imageBox2 {
+  position: relative;
+  float: left;
+}
+.imageBox2 .hover-image2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+.imageBox2:hover .hover-image2 {
+  display: block;
 }
 
+.home-page {
+  display:flex;
+  align-items: center;
 
+}
