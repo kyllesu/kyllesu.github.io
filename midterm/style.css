@@ -179,5 +179,13 @@ a:active {
 .home-page {
   display:flex;
   align-items: center;
+}
 
+.body-container {
+  position: relative;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+  font: small-caps 13px/1 sans-serif;
 }
