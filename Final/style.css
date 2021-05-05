@@ -149,6 +149,24 @@ a:active {
     text-decoration: none;
 }
 
+/* create responsive nav menu */
+@media screen and (max-width: 1000px) {
+  .categories {
+    flex-direction: column;
+    padding: 5vw;
+    line-height: 5vh;
+    
+  }
+
+}
+
+
+.hamburger{
+  display: none;
+}
+
+
+
 #rect {
   height: 10px;
   background-color: black;
@@ -249,14 +267,18 @@ a:active {
   justify-content: center;
 }
 
-.about {
+
+.about-text {
+  position:relative;
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 100;
   font: 18px/1 sans-serif;
   font-kerning: auto;
   letter-spacing: 1px;
-  position:relative;
-  display:flex;
-  justify-content: center;
+  line-height: 3vh;
+
 
 }
 
@@ -340,3 +362,7 @@ a:active {
   cursor:pointer;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
